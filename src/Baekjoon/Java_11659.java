@@ -15,10 +15,6 @@ public class Java_11659 {
 
         for (int i = 0; i < 2 ; i++) {
             input[i] = Integer.parseInt(st.nextToken());
-            if (input[i] < 1 || input[i] > 100000) {
-                System.out.println("1 ≤ N, M ≤ 100,000");
-                return ;
-            }
         }
 
         // 입력 2
@@ -26,12 +22,7 @@ public class Java_11659 {
         st = new StringTokenizer(br.readLine());
 
         for (int i = 0; i < input[0]; i++) {
-            // int 아닌경우는 어떻게 체크하지? (try catch)
             nums[i] = Integer.parseInt(st.nextToken());
-            if (nums[i] > 1000 || nums[i] < 1) {
-                System.out.println("1 ≤ NUM ≤ 1000");
-                return ;
-            }
         }
 
         // 입력 3
@@ -44,10 +35,6 @@ public class Java_11659 {
             int[] range = new int[2];
             for (; j < 2; j++) {
                 range[j] = Integer.parseInt(st.nextToken());
-                if (range[j] < 1 || range[j] > input[0]) {
-                    System.out.println("1 ≤ i ≤ j ≤ N");
-                    return ;
-                }
             }
             lines[i] = range;
         }
