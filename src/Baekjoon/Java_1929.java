@@ -25,7 +25,7 @@ public class Java_1929 {
             미리 소수들을 계산해놓고(배수제거) 그 중에 필요한 값만 출력하는 것.
             혼동하지 않도록 주의!!
          */
-        for (int j = 2; j <= M; j++) {
+        for (int j = 2; j <= Math.sqrt(M); j++) { // M의 제곱근까지만 확인해도 전체 범위의 소수 판별 가능
             if (numbers[j] == 0) {
                 continue;
             } else {
